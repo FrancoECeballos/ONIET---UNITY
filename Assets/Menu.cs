@@ -7,19 +7,19 @@ public class Menu : MonoBehaviour
 {
     public void Jugar()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildindex + 1);
+        SceneManager.LoadScene(1);
     }
     public void Arcade()
     {
-        int aux = 0;
+        SceneManager.LoadScene(0);
     }
     public void Tutorial()
     {
-       int aux= 0;
+        SceneManager.LoadScene(0);
     }
     public void Salir()
     {
-        Debug.log("Saliendo...")
+        Debug.Log("Saliendo...");
         Application.Quit();
     }
 }

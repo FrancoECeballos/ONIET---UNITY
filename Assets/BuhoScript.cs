@@ -9,6 +9,7 @@ public class BuhoScript : MonoBehaviour
     public float speed;
     private Camera mainCamera;
     private Animator animator;
+    private bool gameOver = false;
 
     void Start()
     {
@@ -19,6 +20,8 @@ public class BuhoScript : MonoBehaviour
 
     void Update()
     {
+        if (gameOver) return;
+
         Vector2 newVelocity = Vector2.zero;
 
         if (Input.GetKey(KeyCode.W))
@@ -48,7 +51,14 @@ public class BuhoScript : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Floor"))
+        if (!collision.gameObject.CompareTag("Floor"))
+        {
+            gameOver = true;
+            buhoRb.velocity = Vector2.zero;
+            buhoRb.gravityScale = 1;
+            animator.enabled = false;
+        }
+        else if (collision.gameObject.CompareTag("Floor"))
         {
             animator.SetBool("OnFloor", true);
         }

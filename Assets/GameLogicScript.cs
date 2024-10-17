@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameLogicScript : MonoBehaviour
 {
@@ -13,6 +14,9 @@ public class GameLogicScript : MonoBehaviour
     private AudioSource audioSource;
     public AudioClip backgroundMusic;
     public float musicVolume = 0.5f;
+
+    public GameObject gameOverPanel;
+    private bool isGameOver = false;
 
     void Start()
     {
@@ -27,6 +31,8 @@ public class GameLogicScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (isGameOver) return;
+
         gameTime += Time.deltaTime;
         gameSpeed += Time.deltaTime * 0.01f;
         staminaDepletionRate += Time.deltaTime * 0.01f;
@@ -37,5 +43,18 @@ public class GameLogicScript : MonoBehaviour
             gameScore += 100;
             lastSecond = currentSecond;
         }
+    }
+
+    public void restartGame() 
+    {
+        Debug.Log("Restarting game...");
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+
+    public void gameOver()
+    {
+        isGameOver = true;
+        gameOverPanel.SetActive(true);
+        audioSource.Stop();
     }
 }

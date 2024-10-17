@@ -11,6 +11,8 @@ public class BuhoScript : MonoBehaviour
     private Animator animator;
     private bool gameOver = false;
 
+    public GameLogicScript gameLogic;
+
     void Start()
     {
         mainCamera = Camera.main;
@@ -51,12 +53,26 @@ public class BuhoScript : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-        if (!collision.gameObject.CompareTag("Floor"))
+        if (collision.gameObject.CompareTag("Worm"))
+        {
+            collision.gameObject.SetActive(false);
+            if (gameLogic != null)
+            {
+                gameLogic.gameScore += 500;
+            }
+        }
+        else if (!collision.gameObject.CompareTag("Floor"))
         {
             gameOver = true;
             buhoRb.velocity = Vector2.zero;
             buhoRb.gravityScale = 1;
+            buhoRb.mass = 0.1f;
             animator.enabled = false;
+
+            if (gameLogic != null)
+            {
+                gameLogic.gameOver();
+            }
         }
         else if (collision.gameObject.CompareTag("Floor"))
         {

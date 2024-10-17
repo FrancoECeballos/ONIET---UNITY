@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class SpawnFloor : MonoBehaviour
 {
-    public GameObject emptyObject;
     public GameObject fullTree;
     public float spawnRate = 1;
     private float timer = 0;
@@ -12,13 +11,14 @@ public class SpawnFloor : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        SpawnEmptyObject();
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        float random = Random.Range(1, 2);
+        float random = Random.Range(1, 3);
+        Debug.Log(random);
 
         if (timer < spawnRate)
         {
@@ -28,7 +28,6 @@ public class SpawnFloor : MonoBehaviour
         {
             if (random == 1)
             {
-                SpawnEmptyObject();
                 timer = 0;
             }
             else if (random == 2)
@@ -40,13 +39,8 @@ public class SpawnFloor : MonoBehaviour
         }
     }
 
-    void SpawnEmptyObject()
-    {
-        Instantiate(emptyObject, new Vector3(transform.position.x, (float)-4.5, 0), transform.rotation);
-    }
-
     void SpawnFullTree()
     {
-        Instantiate(fullTree, new Vector3(transform.position.x, (float)-4.5, 0), transform.rotation);
+        Instantiate(fullTree, new Vector3(transform.position.x, 1, 0), transform.rotation);
     }
 }

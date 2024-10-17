@@ -9,6 +9,10 @@ public class TitleScreenScript : MonoBehaviour
     public float frequency = 1f;
     private Vector3 initialPosition;
 
+    private AudioSource audioSource;
+    public AudioClip backgroundMusic;
+    public float musicVolume = 0.5f;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -16,6 +20,14 @@ public class TitleScreenScript : MonoBehaviour
         {
             initialPosition = image.transform.position;
         }
+
+        // Initialize the AudioSource component
+        audioSource = gameObject.AddComponent<AudioSource>();
+        audioSource.clip = backgroundMusic;
+        audioSource.loop = true;
+        audioSource.playOnAwake = true;
+        audioSource.volume = musicVolume;
+        audioSource.Play();
     }
 
     // Update is called once per frame

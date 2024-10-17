@@ -11165,7 +11165,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_CullTransparentMesh: 1
 --- !u!1 &2077787219
 GameObject:
   m_ObjectHideFlags: 0
@@ -11214,6 +11213,8 @@ MonoBehaviour:
   gameSpeed: 0
   gameScore: 0
   staminaDepletionRate: 0.5
+  backgroundMusic: {fileID: 8300000, guid: a39f198186f2ade48a64a21a53525c9b, type: 3}
+  musicVolume: 0.5
 --- !u!1 &2113642263
 GameObject:
   m_ObjectHideFlags: 0
@@ -11244,7 +11245,8 @@ Transform:
   m_LocalPosition: {x: 44.4, y: 0, z: 1}
   m_LocalScale: {x: 3, y: 2.0968544, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 83057080}
   m_Father: {fileID: 1587446071}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!50 &2113642265

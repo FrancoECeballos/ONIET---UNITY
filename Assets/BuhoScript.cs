@@ -12,6 +12,7 @@ public class BuhoScript : MonoBehaviour
     void Start()
     {
         mainCamera = Camera.main;
+        buhoRb.constraints = RigidbodyConstraints2D.FreezeRotation;
     }
 
     void Update()

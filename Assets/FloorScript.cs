@@ -6,20 +6,21 @@ public class FloorScript : MonoBehaviour
 {
 
     public GameObject floor;
-    public Rigidbody2D floorRB;
-    public float speed = 0.5f;
-    public float resetPositionX = 15f;
-    public float offscreenPositionX = -24f;
+    public float speed = 20f;
+    public float resetPositionX = 40f;
+    public float offscreenPositionX = -47f;
 
     // Start is called before the first frame update
     void Start()
     {
-        floorRB.velocity = Vector2.left * speed;
+       
     }
 
     // Update is called once per frame
     void Update()
     {
+        transform.position = transform.position + (Vector3.left * speed) * Time.deltaTime;
+
         if (floor.transform.position.x < offscreenPositionX)
         {
             floor.transform.position = new Vector3(resetPositionX, floor.transform.position.y, 0);

@@ -8,11 +8,13 @@ public class BuhoScript : MonoBehaviour
     public Rigidbody2D buhoRb;
     public float speed;
     private Camera mainCamera;
+    private Animator animator;
 
     void Start()
     {
         mainCamera = Camera.main;
         buhoRb.constraints = RigidbodyConstraints2D.FreezeRotation;
+        animator = buho.GetComponent<Animator>();
     }
 
     void Update()
@@ -42,5 +44,21 @@ public class BuhoScript : MonoBehaviour
         clampedPosition.x = Mathf.Clamp(clampedPosition.x, 0.05f, 0.95f);
         clampedPosition.y = Mathf.Clamp(clampedPosition.y, 0.05f, 0.95f);
         buho.transform.position = mainCamera.ViewportToWorldPoint(clampedPosition);
+    }
+
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Floor"))
+        {
+            animator.SetBool("OnFloor", true);
+        }
+    }
+
+    void OnCollisionExit2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Floor"))
+        {
+            animator.SetBool("OnFloor", false);
+        }
     }
 }

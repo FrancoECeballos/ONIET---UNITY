@@ -11,7 +11,7 @@ public class BuhoScript : MonoBehaviour
     private Animator animator;
     private bool gameOver = false;
 
-    public GameLogicScript gameLogic; // Add a reference to GameLogicScript
+    public GameLogicScript gameLogic;
 
     void Start()
     {
@@ -53,7 +53,15 @@ public class BuhoScript : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-        if (!collision.gameObject.CompareTag("Floor"))
+        if (collision.gameObject.CompareTag("Worm"))
+        {
+            collision.gameObject.SetActive(false);
+            if (gameLogic != null)
+            {
+                gameLogic.gameScore += 500;
+            }
+        }
+        else if (!collision.gameObject.CompareTag("Floor"))
         {
             gameOver = true;
             buhoRb.velocity = Vector2.zero;

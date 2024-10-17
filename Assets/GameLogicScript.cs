@@ -47,7 +47,8 @@ public class GameLogicScript : MonoBehaviour
 
     public void restartGame() 
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        Debug.Log("Restarting game...");
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
     public void gameOver()

@@ -496,7 +496,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &313680343
 RectTransform:
   m_ObjectHideFlags: 0
@@ -922,6 +922,7 @@ MonoBehaviour:
   buho: {fileID: 769587881}
   buhoRb: {fileID: 769587883}
   speed: 8
+  gameLogic: {fileID: 2077787221}
 --- !u!95 &769587887
 Animator:
   serializedVersion: 5
@@ -11190,7 +11191,6 @@ GameObject:
   - component: {fileID: 1939821334}
   - component: {fileID: 1939821337}
   - component: {fileID: 1939821336}
-  - component: {fileID: 1939821335}
   m_Layer: 5
   m_Name: Timer
   m_TagString: Untagged
@@ -11217,20 +11217,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 243}
   m_SizeDelta: {x: 1183.9819, y: 232.3973}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1939821335
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1939821333}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c4dbed97dc0c91648b5e8ac303d4937a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gameLogic: {fileID: 2077787221}
-  timerObject: {fileID: 1939821333}
 --- !u!114 &1939821336
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11402,6 +11388,7 @@ MonoBehaviour:
   staminaDepletionRate: 0.5
   backgroundMusic: {fileID: 8300000, guid: a39f198186f2ade48a64a21a53525c9b, type: 3}
   musicVolume: 0.2
+  gameOverPanel: {fileID: 313680342}
 --- !u!1 &2113642263
 GameObject:
   m_ObjectHideFlags: 0

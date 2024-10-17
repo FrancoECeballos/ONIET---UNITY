@@ -384,7 +384,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   floor: {fileID: 126185988}
-  speed: 20
+  speed: 5
   resetPositionX: 40
   offscreenPositionX: -47
 --- !u!1 &240843534
@@ -901,7 +901,7 @@ Transform:
   m_GameObject: {fileID: 769587881}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.9, y: 0.57, z: -0.5}
+  m_LocalPosition: {x: -17, y: 0, z: -0.5}
   m_LocalScale: {x: 0.59917617, y: 0.46776387, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1007,7 +1007,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -4, y: -8}
+  m_Offset: {x: -4, y: -7}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -1212,7 +1212,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   floor: {fileID: 1251532650}
-  speed: 20
+  speed: 5
   resetPositionX: 40
   offscreenPositionX: -47
 --- !u!1 &1319664639
@@ -11129,7 +11129,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   floor: {fileID: 1716455850}
-  speed: 20
+  speed: 5
   resetPositionX: 40
   offscreenPositionX: -47
 --- !u!1 &1738480871
@@ -11162,7 +11162,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   holeTree: {fileID: 1478883697747036342, guid: 93264c69cdd01584092bdeb95ab30f30, type: 3}
-  spawnRate: 1
+  worm: {fileID: 7590706600613895665, guid: b374e65e8a142b7478e062073037e238, type: 3}
+  spawnRate: 2
 --- !u!4 &1738480873
 Transform:
   m_ObjectHideFlags: 0

@@ -6,7 +6,7 @@ public class FloorMovement : MonoBehaviour
 {
 
     public float moveSpeed = 5;
-    private float deadZone = -10;
+    private float deadZone = -50;
 
     // Start is called before the first frame update
     void Start()

@@ -6,7 +6,7 @@ public class FloorScript : MonoBehaviour
 {
 
     public GameObject floor;
-    public float speed = 20f;
+    public float speed = 5f;
     public float resetPositionX = 40f;
     public float offscreenPositionX = -47f;
 

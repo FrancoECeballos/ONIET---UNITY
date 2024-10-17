@@ -11,6 +11,8 @@ public class BuhoScript : MonoBehaviour
     private Animator animator;
     private bool gameOver = false;
 
+    public GameLogicScript gameLogic; // Add a reference to GameLogicScript
+
     void Start()
     {
         mainCamera = Camera.main;
@@ -56,7 +58,13 @@ public class BuhoScript : MonoBehaviour
             gameOver = true;
             buhoRb.velocity = Vector2.zero;
             buhoRb.gravityScale = 1;
+            buhoRb.mass = 0.1f;
             animator.enabled = false;
+
+            if (gameLogic != null)
+            {
+                gameLogic.gameOver();
+            }
         }
         else if (collision.gameObject.CompareTag("Floor"))
         {

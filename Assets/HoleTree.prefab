@@ -123,6 +123,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dfa4612fac1b86549a9b7a51bd0b2eff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hole: {fileID: 4363911430476203967}
+  heightOffset: 10
   moveSpeed: 5
 --- !u!1 &2308883436905390159
 GameObject:

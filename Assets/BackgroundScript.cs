@@ -7,8 +7,8 @@ public class BackgroundScript : MonoBehaviour
     public GameObject background;
     public Rigidbody2D backgroundRB;
     public float speed = 0.5f;
-    public float resetPositionX = 28.11f;
-    public float offscreenPositionX = -30f;
+    public float resetPositionX = 30f;
+    public float offscreenPositionX = -40f;
     void Start()
     {
         backgroundRB.velocity = Vector2.left * speed;

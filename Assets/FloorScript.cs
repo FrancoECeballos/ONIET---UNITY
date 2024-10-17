@@ -23,7 +23,7 @@ public class FloorScript : MonoBehaviour
 
         if (floor.transform.position.x < offscreenPositionX)
         {
-            floor.transform.position = new Vector3(resetPositionX, floor.transform.position.y, 0);
+            floor.transform.position = new Vector3(resetPositionX, floor.transform.position.y, 1.5f);
         }
     }
 }

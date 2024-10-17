@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class SpawnFloor : MonoBehaviour
 {
-    public GameObject fullTree;
+    public GameObject holeTree;
     public float spawnRate = 1;
     private float timer = 0;
 
@@ -32,15 +32,15 @@ public class SpawnFloor : MonoBehaviour
             }
             else if (random == 2)
             {
-                SpawnFullTree();
+                SpawnHoleTree();
                 timer = 0;
             }
             
         }
     }
 
-    void SpawnFullTree()
+    void SpawnHoleTree()
     {
-        Instantiate(fullTree, new Vector3(transform.position.x, 1, 0), transform.rotation);
+        Instantiate(holeTree, new Vector3(transform.position.x, 5, -3), transform.rotation);
     }
 }

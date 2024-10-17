@@ -10,9 +10,18 @@ public class GameLogicScript : MonoBehaviour
     public float staminaDepletionRate;
     private int lastSecond = 0;
 
+    private AudioSource audioSource;
+    public AudioClip backgroundMusic;
+    public float musicVolume = 0.5f;
+
     void Start()
     {
-        
+        audioSource = gameObject.AddComponent<AudioSource>();
+        audioSource.clip = backgroundMusic;
+        audioSource.loop = true;
+        audioSource.playOnAwake = true;
+        audioSource.volume = musicVolume;
+        audioSource.Play();
     }
 
     // Update is called once per frame

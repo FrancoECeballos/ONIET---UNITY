@@ -7,9 +7,11 @@ public class BuhoScript : MonoBehaviour
     public GameObject buho;
     public Rigidbody2D buhoRb;
     public float speed;
+    private Camera mainCamera;
+
     void Start()
     {
-
+        mainCamera = Camera.main;
     }
 
     void Update()
@@ -34,5 +36,10 @@ public class BuhoScript : MonoBehaviour
         }
 
         buhoRb.velocity = Vector2.Lerp(buhoRb.velocity, newVelocity, 0.5f);
+
+        Vector3 clampedPosition = mainCamera.WorldToViewportPoint(buho.transform.position);
+        clampedPosition.x = Mathf.Clamp(clampedPosition.x, 0.05f, 0.95f);
+        clampedPosition.y = Mathf.Clamp(clampedPosition.y, 0.05f, 0.95f);
+        buho.transform.position = mainCamera.ViewportToWorldPoint(clampedPosition);
     }
 }

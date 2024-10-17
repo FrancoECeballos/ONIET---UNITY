@@ -122,37 +122,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &83057079
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 83057080}
-  m_Layer: 0
-  m_Name: Portion1
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &83057080
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 83057079}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 2113642264}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &240843534
 GameObject:
   m_ObjectHideFlags: 0
@@ -257,7 +226,6 @@ GameObject:
   m_Component:
   - component: {fileID: 330303387}
   - component: {fileID: 330303390}
-  - component: {fileID: 330303389}
   - component: {fileID: 330303388}
   m_Layer: 0
   m_Name: Portion1
@@ -275,8 +243,8 @@ Transform:
   m_GameObject: {fileID: 330303386}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.3, y: 0, z: 1}
-  m_LocalScale: {x: 2, y: 2.0968544, z: 1}
+  m_LocalPosition: {x: -7.4541, y: 0, z: 1}
+  m_LocalScale: {x: 3, y: 2.0968544, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1587446071}
@@ -308,23 +276,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &330303389
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 330303386}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e8aba3a578564454c911cebc9df1ac51, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  background: {fileID: 330303386}
-  backgroundRB: {fileID: 330303388}
-  speed: 5
-  resetPositionX: 31.94
-  offscreenPositionX: -35
 --- !u!212 &330303390
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -468,37 +419,6 @@ Transform:
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &626777841
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 626777842}
-  m_Layer: 0
-  m_Name: Portion2
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &626777842
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 626777841}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 2113642264}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &769587881
 GameObject:
@@ -664,7 +584,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buho: {fileID: 769587881}
   buhoRb: {fileID: 769587883}
-  speed: 5
+  speed: 8
 --- !u!95 &769587887
 Animator:
   serializedVersion: 5
@@ -5761,6 +5681,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1587446071}
+  - component: {fileID: 1587446072}
   m_Layer: 0
   m_Name: Background
   m_TagString: Untagged
@@ -5786,6 +5707,23 @@ Transform:
   - {fileID: 330303387}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1587446072
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1587446067}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8aba3a578564454c911cebc9df1ac51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  background1: {fileID: 330303386}
+  background2: {fileID: 2113642263}
+  backgroundRB1: {fileID: 330303388}
+  backgroundRB2: {fileID: 2113642265}
+  speed: 5
 --- !u!1 &1644407568
 GameObject:
   m_ObjectHideFlags: 0
@@ -10812,7 +10750,7 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1714138749}
-  m_CullTransparentMesh: 0
+  m_CullTransparentMesh: 1
 --- !u!1 &2077787219
 GameObject:
   m_ObjectHideFlags: 0
@@ -10871,7 +10809,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2113642264}
   - component: {fileID: 2113642267}
-  - component: {fileID: 2113642266}
   - component: {fileID: 2113642265}
   m_Layer: 0
   m_Name: Portion2
@@ -10889,12 +10826,10 @@ Transform:
   m_GameObject: {fileID: 2113642263}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 30.3, y: 0, z: 1}
-  m_LocalScale: {x: 2, y: 2.0968544, z: 1}
+  m_LocalPosition: {x: 44.4, y: 0, z: 1}
+  m_LocalScale: {x: 3, y: 2.0968544, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 83057080}
-  - {fileID: 626777842}
+  m_Children: []
   m_Father: {fileID: 1587446071}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!50 &2113642265
@@ -10924,23 +10859,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &2113642266
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2113642263}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e8aba3a578564454c911cebc9df1ac51, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  background: {fileID: 2113642263}
-  backgroundRB: {fileID: 2113642265}
-  speed: 5
-  resetPositionX: 30.3
-  offscreenPositionX: -35
 --- !u!212 &2113642267
 SpriteRenderer:
   m_ObjectHideFlags: 0

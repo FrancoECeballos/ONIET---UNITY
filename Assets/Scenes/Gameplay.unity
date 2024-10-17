@@ -291,8 +291,8 @@ Transform:
   m_GameObject: {fileID: 330303386}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.3, y: 0, z: 1}
-  m_LocalScale: {x: 2, y: 2.0968544, z: 1}
+  m_LocalPosition: {x: 26.94, y: -0.0865, z: 1}
+  m_LocalScale: {x: 1.330533, y: 0.9900006, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1275758281}
@@ -341,8 +341,8 @@ MonoBehaviour:
   background: {fileID: 330303386}
   backgroundRB: {fileID: 330303388}
   speed: 5
-  resetPositionX: 31.94
-  offscreenPositionX: -35
+  resetPositionX: 28.11
+  offscreenPositionX: -30
 --- !u!212 &330303390
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1913,8 +1913,8 @@ Transform:
   m_GameObject: {fileID: 2113642263}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 30.3, y: 0, z: 1}
-  m_LocalScale: {x: 2, y: 2.0968544, z: 1}
+  m_LocalPosition: {x: 8, y: -0.0865, z: 1}
+  m_LocalScale: {x: 1.3304, y: 0.9900006, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 83057080}
@@ -1963,8 +1963,8 @@ MonoBehaviour:
   background: {fileID: 2113642263}
   backgroundRB: {fileID: 2113642265}
   speed: 5
-  resetPositionX: 30.3
-  offscreenPositionX: -35
+  resetPositionX: 28.11
+  offscreenPositionX: -30
 --- !u!212 &2113642267
 SpriteRenderer:
   m_ObjectHideFlags: 0

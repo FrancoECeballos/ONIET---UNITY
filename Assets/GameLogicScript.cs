@@ -18,6 +18,8 @@ public class GameLogicScript : MonoBehaviour
     public GameObject gameOverPanel;
     private bool isGameOver = false;
 
+    private float spaceKeyHoldTime = 0f;
+
     void Start()
     {
         audioSource = gameObject.AddComponent<AudioSource>();
@@ -43,11 +45,24 @@ public class GameLogicScript : MonoBehaviour
             gameScore += 100;
             lastSecond = currentSecond;
         }
+
+        if (Input.GetKey(KeyCode.Space))
+        {
+            spaceKeyHoldTime += Time.deltaTime;
+            if (spaceKeyHoldTime >= 1f)
+            {
+                restartGame();
+            }
+        }
+        else
+        {
+            spaceKeyHoldTime = 0f;
+        }
     }
 
     public void restartGame() 
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        SceneManager.LoadScene("Gameplay");
     }
 
     public void gameOver()

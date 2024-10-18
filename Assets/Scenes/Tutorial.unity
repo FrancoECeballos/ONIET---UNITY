@@ -501,8 +501,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 836.07904, y: -379.18872}
-  m_SizeDelta: {x: 182.402, y: 51.4892}
+  m_AnchoredPosition: {x: 620, y: -483}
+  m_SizeDelta: {x: 603.8331, y: 56.6951}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &690282673
 MonoBehaviour:
@@ -1644,7 +1644,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Volver
+  m_text: Vuelva coN cualquier tecla
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
@@ -2050,6 +2050,7 @@ GameObject:
   - component: {fileID: 1358774519}
   - component: {fileID: 1358774518}
   - component: {fileID: 1358774520}
+  - component: {fileID: 1358774521}
   m_Layer: 5
   m_Name: Menu
   m_TagString: Untagged
@@ -2137,6 +2138,18 @@ MonoBehaviour:
   frequency: 1
   backgroundMusic: {fileID: 8300000, guid: e50371ef405231a468ffc969a262cd68, type: 3}
   musicVolume: 0.2
+--- !u!114 &1358774521
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1358774516}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9708633ca8a7c1c48b8f54235549f77f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1471845919
 GameObject:
   m_ObjectHideFlags: 0

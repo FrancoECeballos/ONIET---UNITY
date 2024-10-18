@@ -267,7 +267,6 @@ GameObject:
   - component: {fileID: 152705884}
   - component: {fileID: 152705883}
   - component: {fileID: 152705882}
-  - component: {fileID: 152705885}
   m_Layer: 5
   m_Name: BtnJugar
   m_TagString: Untagged
@@ -389,18 +388,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 152705880}
   m_CullTransparentMesh: 1
---- !u!114 &152705885
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 152705880}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 69ccfd4b8538235458517a2efa7b4161, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &283109344
 GameObject:
   m_ObjectHideFlags: 0
@@ -921,7 +908,7 @@ MonoBehaviour:
   image: {fileID: 638803985}
   amplitude: 15
   frequency: 1
-  backgroundMusic: {fileID: 0}
+  backgroundMusic: {fileID: 8300000, guid: e50371ef405231a468ffc969a262cd68, type: 3}
   musicVolume: 0.5
 --- !u!1 &1288551613
 GameObject:

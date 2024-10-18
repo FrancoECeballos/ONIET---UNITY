@@ -384,7 +384,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   floor: {fileID: 126185988}
-  speed: 5
+  speed: 7
   resetPositionX: 40
   offscreenPositionX: -47
 --- !u!1 &240843534
@@ -1213,7 +1213,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   floor: {fileID: 1251532650}
-  speed: 5
+  speed: 7
   resetPositionX: 40
   offscreenPositionX: -47
 --- !u!1 &1319664639
@@ -6097,7 +6097,7 @@ MonoBehaviour:
   background2: {fileID: 2113642263}
   backgroundRB1: {fileID: 330303388}
   backgroundRB2: {fileID: 2113642265}
-  speed: 5
+  speed: 7
 --- !u!1 &1644407568
 GameObject:
   m_ObjectHideFlags: 0
@@ -11130,7 +11130,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   floor: {fileID: 1716455850}
-  speed: 5
+  speed: 7
   resetPositionX: 40
   offscreenPositionX: -47
 --- !u!1 &1738480871
@@ -11164,7 +11164,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   holeTree: {fileID: 1478883697747036342, guid: 93264c69cdd01584092bdeb95ab30f30, type: 3}
   worm: {fileID: 7590706600613895665, guid: b374e65e8a142b7478e062073037e238, type: 3}
-  spawnRate: 2
+  spawnRate: 1
 --- !u!4 &1738480873
 Transform:
   m_ObjectHideFlags: 0

@@ -24,24 +24,22 @@ public class SpawnFloor : MonoBehaviour
         }
         else
         {
-            int v = Random.Range(1, 4);
+            int v = Random.Range(1, 6);
             float random = v;
-            Debug.Log(random);
             if (random == 1)
             {
                 timer = 0;
             }
-            else if (random == 2)
+            else if (random == 2 || random == 3)
             {
                 SpawnHoleTree();
                 timer = 0;
             }
-            else if (random == 3)
+            else if (random == 4 || random == 5)
             {
                 SpawnWorm();
                 timer = 0;
             }
-            
         }
     }
 

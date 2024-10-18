@@ -123,9 +123,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dfa4612fac1b86549a9b7a51bd0b2eff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hole: {fileID: 4363911430476203967}
-  heightOffset: 10
-  moveSpeed: 5
+  moveSpeed: 10
 --- !u!1 &2308883436905390159
 GameObject:
   m_ObjectHideFlags: 0
@@ -219,6 +217,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5387164047169716980}
+  - component: {fileID: 5659070222967368406}
   m_Layer: 0
   m_Name: Hole
   m_TagString: Untagged
@@ -245,6 +244,19 @@ Transform:
   - {fileID: 7728315694141485129}
   m_Father: {fileID: 846671816583755822}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5659070222967368406
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4363911430476203967}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67f0987f5b222644fa780ea5e1ce78ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hole: {fileID: 4363911430476203967}
 --- !u!1 &6004124915106511590
 GameObject:
   m_ObjectHideFlags: 0

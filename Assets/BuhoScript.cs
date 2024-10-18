@@ -22,7 +22,14 @@ public class BuhoScript : MonoBehaviour
 
     void Update()
     {
-        if (gameOver) return;
+        if (gameOver)
+        {
+            if (Input.GetKey(KeyCode.Space) && gameLogic != null)
+            {
+                gameLogic.restartGame();
+            }
+            return;
+        }
 
         Vector2 newVelocity = Vector2.zero;
 
